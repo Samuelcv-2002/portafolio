@@ -5,7 +5,8 @@ import Resumen from "../secciones/Resumen";
 import useObserver from "../observer";
 import SobreMi from "../secciones/SobreMi";
 import FloatRedes from "../componentes/floatRedes";
-import Tech from "../secciones/tecnologies";
+import Tech from "../componentes/tecnologies";
+import Contacto from "../secciones/contacto";
 
 
 export default function Incio() {
@@ -24,6 +25,6 @@ export default function Incio() {
             <Tech />
         </article>
         <Proyectos />
-
+        <Contacto/>
     </>
 }
