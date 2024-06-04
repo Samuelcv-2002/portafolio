@@ -14,13 +14,15 @@ import "swiper/css/scrollbar";
 import { proyectos } from "../assets/constantes";
 
 export default function App() {
+  const window = screen.width
+
   return (
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={3}
+        slidesPerView={window < 500 ? 2 : "auto"}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,

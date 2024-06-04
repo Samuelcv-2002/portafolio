@@ -3,10 +3,9 @@ import Header from "../componentes/header";
 import Proyectos from "../secciones/Proyectos";
 import Resumen from "../secciones/Resumen";
 import useObserver from "../observer";
-import SobreMi from "../secciones/SobreMi";
 import FloatRedes from "../componentes/floatRedes";
 import Tech from "../componentes/tecnologies";
-import Contacto from "../secciones/contacto";
+import Servicios from "../secciones/Servicios.jsx";
 
 
 export default function Incio() {
@@ -25,6 +24,6 @@ export default function Incio() {
             <Tech />
         </article>
         <Proyectos />
-        <Contacto/>
+        <Servicios/>
     </>
 }
