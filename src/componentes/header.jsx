@@ -19,8 +19,8 @@ export default function Header() {
             <nav>
                 <a href="#Inicio" onClick={() => ischecked(!input)}>Inicio</a>
                 <a href="#Proyectos" onClick={() => ischecked(!input)}>Proyectos</a>
-                <a href="#AboutMe" onClick={() => ischecked(!input)}>Sobre mi</a>
-                <a href="#Proyectos" onClick={() => ischecked(!input)}>Contacto</a>
+                <a href="#Servicios" onClick={() => ischecked(!input)}>Servicios</a>
+                <a href="#Contacto" onClick={() => ischecked(!input)}>Contacto</a>
             </nav>
         </header>
 

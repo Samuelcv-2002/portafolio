@@ -1,509 +1,584 @@
 * {
-    margin: 0;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+font-family: impact;
+src: url(./assets/impact.ttf);
 }
 
 body {
-    margin: 0;
-    background-color: #ffffff;
+  margin: 0;
+  background-color: #ffffff;
 }
 
 
 ::-webkit-scrollbar {
-    background-color: rgb(255, 255, 255);
-    width: 6px;
+  background-color: rgb(255, 255, 255);
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);
-    border-radius: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
 }
 
 
 header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: fixed;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: 10vh;
-    align-items: center;
-    margin: 0 auto;
-    inset: 0;
-    z-index: 20;
-    background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 10vh;
+  align-items: center;
+  margin: 0 auto;
+  inset: 0;
+  z-index: 20;
+  background-color: white;
 }
 
 header a {
-    font-size: 2.7vh;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
+  font-size: 2.7vh;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
 
 header>a {
-    margin-left: 35px;
-    font-size: 4vh;
-    font-weight: 700;
+  margin-left: 35px;
+  font-size: 4vh;
+  font-weight: 700;
 }
 
 header>nav {
-    justify-self: right;
-    margin-right: 40px;
+  justify-self: right;
+  margin-right: 40px;
 }
 
 header>nav a {
-    padding: 20px;
+  padding: 20px;
 }
 
 header>nav a.active {
-    background-color: black;
-    color: white;
-    padding: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
 }
 
 #checkMenu {
-    display: none;
+  display: none;
 }
 
 #checkMenulabel {
-    display: none;
+  display: none;
 }
 
 #Inicio {
-    width: 100%;
-    padding-top: 15vh;
-    text-align: center;
-    margin-bottom: 12vh;
+  width: 100%;
+  padding-top: 15vh;
+  text-align: center;
+  margin-bottom: 12vh;
 }
 
 #Inicio > h1{
-    font-size: 8vh;
+  font-size: 8vh;
 }
 
 #Inicio > p{
-    font-size: 5vh;
-    font-weight: 400;
+  font-size: 5vh;
+  font-weight: 400;
 }
 /*SWIPER*/
 
 .container-swiper {
-    margin-top: 5vh;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    overflow: hidden;
-  }
-  
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-  }
-  .swiper-slide img{
-    width: 100%;
-    height: 55vh;
-    object-fit: cover;
-    border-radius: 20px;
-  }
+  margin-top: 5vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+}
+.swiper-slide img{
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+  border-radius: 20px;
+}
 
 
-  .container-swiper  {
-    width: 100%;
-    overflow: hidden;
-    padding: 0px!important;
+.container-swiper  {
+  width: 100%;
+  overflow: hidden;
+  padding: 0px!important;
 }
 
 .container-swiper > div {
-    width: 90%;
-    margin: 0 auto;
-    grid-template-columns: repeat(4, 1fr);
-    display: grid;
-    overflow-y: hidden;
-    margin-top: 3vh;
+  width: 75%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  overflow-y: hidden;
+  margin-top: 3vh;
 }
-  
+
 /* CARROUSEL*/
 .tecnologias{
-    width: 80%;
-    overflow: hidden;
-    margin: 50px auto 0px;
+  width: 80%;
+  overflow: hidden;
+  margin: 50px auto 0px;
 }
 
 .carousel {
-    min-width: 150vh;
-    height: 50px;
-    margin-bottom: 50px;
+  min-width: 150vh;
+  height: 50px;
+  margin-bottom: 50px;
 }
 
 .carousel ul li {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 
 .carousel img {
-    height: 40px;
-    filter: grayscale(100%);
+  height: 40px;
+  filter: grayscale(100%);
 }
 
 /*COCSAS DEL OBSERVER */
 
 .Mostrar,
 .Mostrar>article div {
-    opacity: var(--opacity) !important;
-    transform: var(--transform) !important;
+  opacity: var(--opacity) !important;
+  transform: var(--transform) !important;
+  
 }
 
 .white-anchor{
-    color: white;
+  color: white;
 }
+
+/*h2 de las secciones*/
+section:nth-child(odd) h2{
+text-align: center;
+font-size: 5em;
+font-family: impact;
+font-weight: 400;
+text-transform: uppercase;
+writing-mode: vertical-lr;
+transform: rotate(180deg);
+margin: 0 auto;
+grid-row: 1/-1;
+margin-right: 10px;
+transition: ease .3s;
+}
+
+section:nth-child(odd) .container{
+grid-column: 2/4;
+grid-row: 1/2;
+}
+
+section:nth-child(even) h2{
+text-align: center;
+font-size: 5em;
+font-family: impact;
+font-weight: 400;
+text-transform: uppercase;
+writing-mode: vertical-lr;
+margin: 0 auto;
+grid-row: 1/-1;
+margin-right: 10px;
+transition: ease .3s;
+}
+
+section:nth-child(even) .container{
+grid-column: 1/3;
+grid-row: 1/2;
+}
+
+
 
 /*Proyectos*/
 
 #Proyectos {
-    width: 90%;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: 8vw 1fr;
-    grid-template-rows: 1fr;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 8vw 1fr;
+  grid-template-rows: 1fr;
 
 }
 
-#Proyectos h2 {
-    text-align: center;
-    font-size: 5em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    margin: 0 auto;
-    grid-row: 1/-1;
-    margin-right: 10px;
-    transition: ease .3s;
-}
 
 .container {
-    width: 100%;
-    overflow-x: auto;
+  width: 100%;
+  overflow-x: auto;
 }
 
-.container>div {
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 250px);
-    display: grid;
-    place-content: center;
-    gap: 5px;
-    overflow-y: hidden;
-    overflow-x: auto;
+#Proyectos .container>div {
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  display: grid;
+  place-content: center;
+  gap: 5px;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 .container>div a:nth-of-type(1) {
-    grid-row: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 
 .container>div a:nth-of-type(2) {
-    grid-row: 1 / 2;
-    grid-column: 2/4;
+  grid-row: 1 / 2;
+  grid-column: 2/4;
 }
 
 .container>div a:nth-of-type(3) {
-    grid-row: 1/2;
-    grid-column: 5/-1;
+  grid-row: 1/2;
+  grid-column: 5/-1;
 }
 
 .container>div a:nth-of-type(4) {
-    grid-row: 2/-1;
-    grid-column: 2/4;
+  grid-row: 2/-1;
+  grid-column: 2/4;
 }
 
 .container>div a:nth-of-type(5) {
-    grid-row: 2/-1;
-    grid-column: 4/-1;
+  grid-row: 2/-1;
+  grid-column: 4/-1;
 }
 
 .card {
-    background-color: white;
-    border-radius: 20px;
-    height: 100%;
-    overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    --opacity: 1;
-    transition: ease calc(0.3s / var(--Dur));
-    position: relative;
-    cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  --opacity: 1;
+  transform: translateY(100px);
+  transition: all calc(0.3s / var(--Dur));
+  position: relative;
+  cursor: pointer;
 }
 
 .card>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    transition: ease .5s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: ease .5s;
 }
 
 .card>div {
-    position: absolute;
-    backdrop-filter: blur(1.5px);
-    inset: 0;
-    opacity: 0;
-    display: grid;
-    place-items: center;
-    grid-template-rows: 0% 50%;
-    color: white;
-    place-content: center;
-    transition: ease 0.3s;
+  position: absolute;
+  backdrop-filter: blur(1.5px);
+  inset: 0;
+  opacity: 0;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 0% 50%;
+  color: white;
+  place-content: center;
+  transition: ease 0.3s;
 }
 
 .card>div>h3 {
-    font-size: 1em;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .card>div>p {
-    padding: 20px;
-    font-size: 1em;
+  padding: 20px;
+  font-size: 1em;
 }
 
 
 .card:hover>img {
-    filter: brightness(0.4);
-    transform: scale(1.1);
-    cursor: pointer;
+  filter: brightness(0.4);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .card:hover>div {
-    opacity: 1;
-}
-
-/*Sobre mi*/
-
-#AboutMe {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) 100px;
-    place-items: center;
-    margin: 80px auto;
-}
-
-#AboutMe>h2 {
-    grid-column: -2/-1;
-    grid-row: 1/-1;
-    writing-mode: vertical-lr;
-    text-align: center;
-    font-size: 5em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-#AboutMe>article {
-    position: relative;
-    height: 60%;
-    width: 60%;
-    transform: translateY(100px);
-    --transform: translateY(0px);
-    opacity: 0;
-    --opacity: 1;
-    border: solid 1px rgb(211, 210, 210);
-    transition: ease .5s;
-}
-
-#AboutMe>article img {
-    position: absolute;
-    inset: 0;
-    top: -90px;
-    width: 40%;
-    margin: 0 auto;
-    border-radius: 50%;
-}
-
-
-#AboutMe>article p {
-    width: 90%;
-    margin: 50px auto;
-}
-
-/* Responsive*/
-
-
-@media screen and (max-width: 938px) {
-    #root {
-        scroll-snap-type: none;
-        overflow-y: hidden;
-        height: 100%;
-    }
-
-    header {
-        background-color: white;
-        z-index: 20;
-        width: 100%;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    #checkMenulabel {
-        width: 10%;
-        display: block;
-        margin-right: 30px;
-        font-size: 35px;
-        font-weight: 900;
-        cursor: pointer;
-        justify-self: right;
-    }
-
-    nav {
-        position: absolute;
-        inset: 0;
-        top: 10lvh;
-        height: 0lvh;
-        background-color: white;
-        overflow: hidden;
-        transition: ease .5s;
-    }
-
-    #checkMenu:checked~nav {
-        margin-right: 0px;
-        height: 90lvh;
-    }
-
-    nav a {
-        text-align: center;
-        font-size: 5lvw;
-        width: 80%;
-        margin: 40px auto;
-        display: block;
-    }
-
-    header>nav a.active {
-        color: white;
-    }
-
-    /*Inicio*/
-
-    .container-swiper>div {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*Proyectos*/
-    
-    #Proyectos {
-        width: 95%;
-        padding-top: 10lvh;
-        margin: 0lvh auto;
-        grid-template-columns: 1fr;
-    }
-
-    #Proyectos h2 {
-        margin: 0 auto;
-    }
-
-    .container {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .container>div {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        margin: 0 auto;
-        padding-bottom: 8lvh;
-    }
-    
-    .container > div a:nth-child(1) {
-        grid-column: 1/2;
-        grid-row: 2/4;
-    }
-
-    .container > div a:nth-child(2) {
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-
-    .container > div a:nth-child(3) {
-        grid-column: 2/3;
-        grid-row: 4/6;
-    }
-
-    .container > div a:nth-child(4) {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .container>div a:nth-of-type(5) {
-        grid-column: 1/3;
-        grid-row: 6/7;
-    }
-
-    #Proyectos h2 {
-        font-size: 15lvw;
-        writing-mode: unset;
-        transform: rotate(0deg);
-    }
-}
-
-/*ANIMACIONES*/
-
-
-@keyframes moverFondo {
-    0% {
-        background-position-y: -30px;
-        background-position-x: 30px;
-    }
-
-    25% {
-        background-position-x: 10px;
-        background-position-y: 60px;
-    }
-
-    50% {
-        background-position-x: 60px;
-        background-position-y: 30px;
-    }
-
-    100% {
-        background-position-x: -60px;
-        background-position-y: 60px;
-    }
+  opacity: 1;
 }
 
 
 /*Aside flotante de redes*/
 
 .FloatRedes {
-    position: fixed;
-    width: 2vw;
-    right: 10px;
-    top: 50%;
-    z-index: 20;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  width: 2vh;
+  right: 4vh;
+  top: 50%;
+  z-index: 20;
+  transform: translate(-50%, -50%);
 }
 
-.FloatRedes>a {
-    display: block;
-    text-align: center;
-    width: 100%;
-    margin: 5px auto;
-    cursor: pointer;
+.FloatRedes a {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 2vh;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  margin: 2vh auto;
+  padding: 2.2vh;
+  transition: .3s ease;
+  border-radius: 50%;
+  fill: white;
 }
 
 .FloatRedes>a svg {
-    transform: scale(2.2);
-    height: 2.5vh;
-    margin: 2vh auto;
-    transition: ease .2s;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 55%;
+}
+
+.FloatRedes>a:hover {
+  padding: 1.9vh;
+  fill: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+/*--------------- SERVICIOS -------------------*/
+
+#Servicios{
+width: 90%;
+margin: 40px auto;
+display: grid;
+grid-template-columns: 1fr 8vw;
+grid-template-rows: 1fr;
+}
+
+#Servicios .container  h3{
+  width: 100%;
+  font-size: 5vh;
+  text-align: center;
+  font-weight: 400;
 }
 
 
-.FloatRedes>a:hover>svg {
-    transform: scale(2.8);
-    fill: brown;
+#Servicios .servicesCont{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+margin-top: 30px;
+overflow: hidden;
+}
+
+#Servicios .card-services{
+border: 2px solid transparent;
+height: 30vh;
+background:rgba(0, 0, 0, 0.966);
+background-clip: padding-box;
+border-radius: 45px;
+opacity: 0;
+transform: translateY(50px);
+padding: 30px;
+transition: all calc(0.3s / var(--Dur));
+svg {
+  margin-bottom: 2vh;
+  fill: white;
+  width: 4vw;
+}
+}
+
+.card-title {
+font-weight: 600;
+color: white;
+line-height: 40px;
+font-size: 1.5vw;
+padding-bottom: 8px;
+}
+
+.card-description {
+font-weight: 600;
+line-height: 32px;
+color: hsla(0, 0%, 100%, 0.5);
+font-size: 1.2vw;
+max-width: 470px;
+}
+
+
+/*--------------- CONTACTO -------------------*/
+
+
+#Contacto {
+  width: 90%;
+  height: 100vh;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 8vw;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+
+/* Responsive*/
+
+
+@media screen and (max-width: 938px) {
+  #root {
+      scroll-snap-type: none;
+      overflow-y: hidden;
+      height: 100%;
+  }
+
+  header {
+      background-color: white;
+      z-index: 20;
+      width: 100%;
+      padding-left: 0%;
+      padding-right: 0%;
+  }
+
+  #checkMenulabel {
+      width: 10%;
+      display: block;
+      margin-right: 30px;
+      font-size: 35px;
+      font-weight: 900;
+      cursor: pointer;
+      justify-self: right;
+  }
+
+  nav {
+      position: absolute;
+      top: 10lvh;
+      height: 90lvh;
+      background-color: white;
+      overflow: hidden;
+      transition: ease .3s;
+      width: 100%;
+      right: -100%;
+      margin-right: 0px!important;
+  }
+
+  #checkMenu:checked~nav {
+      right: 0%;
+      height: 90lvh;
+  }
+
+  nav a {
+      text-align: center;
+      font-size: 5lvw;
+      width: 80%;
+      margin: 40px auto;
+      display: block;
+  }
+
+  header>nav a.active {
+      color: white;
+  }
+
+  /*Inicio*/
+
+    
+  #Inicio > h1{
+    font-size: 6vh;
+  }
+
+  #Inicio > p{
+    width: 90%;
+    font-size: 3vh;
+    margin: 16px auto;
+  }
+
+  .container-swiper>div {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section {
+    display: block!important;
+  }
+
+  section h2 {
+    margin: 0 auto!important;
+    font-size: 15lvw!important;
+    writing-mode: unset!important;
+    transform: rotate(0deg)!important;
+}
+
+  /*Proyectos*/
+  
+  #Proyectos {
+      width: 95%;
+      padding-top: 10lvh;
+      margin: 0lvh auto;
+      grid-template-columns: 1fr;
+  }
+
+  .container {
+      width: 100%;
+      overflow: hidden;
+  }
+
+  #Proyectos .container > div {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 auto;
+      padding-bottom: 8lvh;
+  }
+  
+  #Proyectos .container > div a:nth-child(1) {
+      grid-column: 1/2;
+      grid-row: 2/4;
+  }
+
+  #Proyectos .container > div a:nth-child(2) {
+      grid-column: 1/3;
+      grid-row: 1/2;
+  }
+
+  #Proyectos .container > div a:nth-child(3) {
+      grid-column: 2/3;
+      grid-row: 4/6;
+  }
+
+  #Proyectos .container > div a:nth-child(4) {
+      grid-column: 1/2;
+      grid-row: 4/5;
+  }
+
+  .container>div a:nth-of-type(5) {
+      grid-column: 1/3;
+      grid-row: 6/7;
+  }
+
+
+/*--------------- SERVICIOS -------------------*/
+
+  #Servicios .servicesCont{
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    }
+    #Servicios .card-services svg{
+      width: 10vw;
+    }
+  .card-title {
+    font-size: 4vw;
+  }
+  .card-description{
+    font-size: 3vw;
+  }
 }

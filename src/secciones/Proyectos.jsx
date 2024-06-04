@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import useObserver from "../observer";
 import Card from "../componentes/card";
+import {proyectos} from "../assets/constantes"
 
 export default function Proyectos() {
 
@@ -16,14 +17,16 @@ export default function Proyectos() {
             <h2>Proyectos</h2>
             <div className="container">
                 <div className="Proyectos">
-                    <Card className="card Hidden" img="Proyectos/vuelos.png" style={{ "--Dur": 0.4 }} />
-                    <Card className="card Hidden" img="Proyectos/dashRest.png" style={{ "--Dur": 0.6 }} />
-                    <Card className="card Hidden" img="Proyectos/vuelos.png" style={{ "--Dur": 0.4 }} />
-                    <Card className="card Hidden" img="Proyectos/lino.png" style={{ "--Dur": 0.7 }} />
-                    <Card className="card Hidden" img="Proyectos/asistencia.png" style={{ "--Dur": 0.5 }} />
-                    <Card className="card Hidden" img="Proyectos/val.png" style={{ "--Dur": 0.6 }} />
+                {proyectos.map((element, i) => <Card key={element.titulo} className="card Hidden" img={element.img} style={{ "--Dur": `0.${i + 3}`,  "--transform": "translateY(0px)" }} />)}
                 </div>
             </div>
         </section>
     </>
 }
+
+/*
+               {proyectos.map((element, i) => {
+                        const Dur = 0.4 + i
+                        return <><Card className="card Hidden" img={element.img} style={{ "--Dur": Dur }} /></>
+                    })}
+*/

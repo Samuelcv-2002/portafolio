@@ -9,49 +9,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const proyectos = [
-  {
-    titulo: "Sistema de inventario",
-    descripcion:
-      "Sistema de inventario para la empresa de construcción de viviendas, el cual permite el control de los materiales",
-    img: "../../public/Proyectos/asistencia.png",
-  },
-  {
-    titulo: "Sistema de restaurante",
-    descripcion:
-      "Sistema de inventario para la empresa de construcción de viviendas, el cual permite el control de los materiales",
-    img: "../../public/Proyectos/dashRest.png",
-  },
-  {
-    titulo: "Lino Gallardo web",
-    descripcion:
-      "Sistema de inventario para la empresa de construcción de viviendas, el cual permite el control de los materiales",
-    img: "../../public/Proyectos/lino.png",
-  },
+// proyectos 
 
-  {
-    titulo: "Valorant web",
-    descripcion:
-      "Sistema de inventario para la empresa de construcción de viviendas, el cual permite el control de los materiales",
-    img: "../../public/Proyectos/val.png",
-  },
-
-  {
-    titulo: "Vuelos web",
-    descripcion:
-      "Sistema de inventario para la empresa de construcción de viviendas, el cual permite el control de los materiales",
-    img: "../../public/Proyectos/vuelos.png",
-  },
-];
+import { proyectos } from "../assets/constantes";
 
 export default function App() {
+  const window = screen.width
+
   return (
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={"auto"}
+        slidesPerView={window < 500 ? 2 : "auto"}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -67,7 +38,7 @@ export default function App() {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
-        {proyectos.map((element) => (
+        {proyectos.filter(element => element.active == 1).map((element) => (
           <SwiperSlide key={element.titulo}>
             <img src={element.img} />
           </SwiperSlide>
