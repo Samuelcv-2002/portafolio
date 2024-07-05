@@ -11,11 +11,10 @@ export default function useObserver() {
                 const navElement = document.querySelector(`nav a[href="#${id}"]`)
                 navElement.classList.toggle("active", entry.isIntersecting)
             } 
-
             entry.target.classList.toggle("Mostrar", entry.isIntersecting)
         })
 
-    }, { threshold: 1 }));
+    }, { threshold: 0.1 }));
 
     useEffect(() => {
         const currentObserver = observer.current;
