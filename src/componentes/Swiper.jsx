@@ -11,11 +11,13 @@ import "swiper/css/scrollbar";
 
 // proyectos 
 
-import { proyectos } from "../assets/constantes";
+import { proyectos } from "../assets/constantes/proyectos";
+import { useContext } from "react";
+import { ProyectoToView } from "../contextos/proyectCont";
 
 export default function App() {
+  const {setProyecto} = useContext(ProyectoToView)
   const window = screen.width
-
   return (
       <Swiper
         effect={"coverflow"}
@@ -39,7 +41,7 @@ export default function App() {
         className="swiper_container"
       >
         {proyectos.filter(element => element.active == 1).map((element) => (
-          <SwiperSlide key={element.titulo}>
+          <SwiperSlide key={element.titulo} onClick={() => setProyecto(element)}>
             <img src={element.img} />
           </SwiperSlide>
         ))}

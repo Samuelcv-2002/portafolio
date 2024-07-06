@@ -25,7 +25,7 @@ const responsive = {
             max: 464,
             min: 0
         },
-        items: 3,
+        items: 4    ,
         partialVisibilityGutter: 30
     },
     tablet: {
