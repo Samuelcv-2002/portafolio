@@ -368,6 +368,10 @@ grid-row: 1/2;
     cursor: pointer;
   }
 
+  small{
+    font-size: 12px;
+  }
+
   .diseable{
     pointer-events: none;
     opacity: .5;

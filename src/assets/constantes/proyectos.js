@@ -97,18 +97,20 @@ export const proyectos = [
       ],
     },
     {
-      titulo: "Valorant1 web",
-      descripcion: "Sistema de inventario para la empresa de construcción de viviendas, el cual permite el control de los materiales",
-      img: "Proyectos/valo/cover.png",
-      url: "https://samuelcv-2002.github.io/Valorant-Api/",
+      titulo: "Landing page laboratorio",
+      descripcion: ` Elaboré esta landing page con el objetivo principal de optimizar tanto la interfaz de usuario (UI) como la experiencia del usuario (UX). 
+      Mi enfoque se centró en proporcionar una navegación intuitiva, una estética visualmente atractiva y contenido relevante, todo ello 
+      diseñado para captar la atención de los visitantes y motivarlos a interactuar con la página.`,
+      img: "Proyectos/JoseGH/cover.png",
+      url: null,
       active: 1,
       stack: [
         "logos/React.png",
         "logos/javascript.png",
       ],
       images: [
-        "Proyectos/valo/lap.png",
-        "Proyectos/valo/mobile.png",
+        "Proyectos/JoseGH/lap.png",
+        "Proyectos/JoseGH/mobile.png",
       ],
     },
   ];
