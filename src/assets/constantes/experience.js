@@ -5,9 +5,9 @@ export const expe = [
         ente: "MPPEFCE",
         desc: 'Actualmente estoy desarrollando los sistemas en este stack junto a otros Frameworks que se requieran utilizar para el desarrollo adecuado',
         image: [
-            "logos/vuejs.webp",
-            "logos/Node.png",
-            "logos/postgresql.png",
+            "/logos/vuejs.webp",
+            "/logos/Node.png",
+            "/logos/postgresql.png",
         ]
     },
     {
@@ -16,9 +16,9 @@ export const expe = [
         ente: "Varios lugares",
         desc: 'Desarrolle varios sistemas con este Framework con el fin de brindar una SPA al usuario. (Inventario, Restaurante, webs, Asistencias, etc)',
         image: [
-            "logos/Node.png",
-            "logos/react.png",
-            "logos/postgresql.png",
+            "/logos/Node.png",
+            "/logos/React.png",
+            "/logos/postgresql.png",
         ]
     },
     {
@@ -27,9 +27,9 @@ export const expe = [
         ente: "Universidad",
         desc: 'Trabajé en varios sistemas en este stack en la universidad, demostrando habilidades en diseño de bases de datos, diseño de API REST con "Django Rest Framework" y manejo de React',
         image: [
-            "logos/django.png",
-            "logos/react.png",
-            "logos/Mysql.png",
+            "/logos/django.png",
+            "/logos/React.png",
+            "/logos/mysql.png",
         ]
     },
 ]

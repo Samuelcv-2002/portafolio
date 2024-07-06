@@ -36,7 +36,10 @@ export default function DetailsProyect () {
 
             <div className="Enlaces">
                         <a target="noreferrer" className={Proyecto.url ?? "diseable"} href={Proyecto.url ? Proyecto.url : "#"}>{Proyecto.url ? "Visualizar" : "Sin página"}</a>    
-                        <a target="noreferrer" className={Proyecto.url ?? "diseable"} href="#">Ver video</a>
+                        <a target="noreferrer" className={"diseable"} href="#">
+                            Ver video&nbsp;
+                            <strong><small>(proximamente)</small></strong>
+                        </a>
             </div>
             </div>
         </div>
