@@ -14,11 +14,13 @@ import { Footer } from "../componentes/footer.jsx";
 import Experiencia from "../secciones/Experiencia.jsx";
 import { ProyectoToView } from "../contextos/proyectCont.js";
 import DetailsProyect from "../componentes/DetailsProyect.jsx";
+import Loader from "../componentes/loader.jsx";
 library.add(fas)
 
 export default function Incio() {
     const [setElements] = useObserver();
     const [Proyecto, setProyecto] = useState(null)
+    const [Loading, setLoading] = useState(true)
 
     const CheckSectionActive = () => {
         const cutUrl = location.href.split("#")
@@ -42,7 +44,19 @@ export default function Incio() {
         body.style.overflow = Proyecto ? "hidden" : "auto"
     }, [Proyecto]);
 
+    useEffect(() => {
+        const handleLoad = () => {
+            setLoading(false);
+        };
+      
+        window.addEventListener('load', handleLoad);
+      
+        return () => window.removeEventListener('load', handleLoad);
+      }, []);
+      
     return <>
+
+    {Loading ? <Loader/> : null}
 
       <ProyectoToView.Provider value={{Proyecto, setProyecto}}>
             <aside className="FloatRedes">

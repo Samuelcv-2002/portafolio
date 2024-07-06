@@ -24,7 +24,7 @@ export default function DetailsProyect () {
                 <button 
                 key={Proyecto.name + element} 
                 onClick={() => setimage(element)}
-                disabled={image == element}
+                className={image == element ? "visible" : ""}
                 >
                     <img src={element} alt="imagen" className="imgAssets"/>
                 </button>)}
