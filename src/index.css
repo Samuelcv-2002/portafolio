@@ -314,6 +314,13 @@ grid-row: 1/2;
     button:hover{
       transform: scale(1.1);
     }
+
+    button.visible{
+      transform: scale(1.1);
+      pointer-events: none;
+      border-color: red;
+    }
+
     img{
       width: 100%;
       height: 100%;
@@ -829,11 +836,17 @@ footer .ft-Redes{
     font-size: 3vh;
     margin: 16px auto;
   }
+  
 
   .container-swiper>div {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .carousel {
+    width: 100%;
+  }
+  
 
   section {
     display: block!important;
@@ -937,6 +950,7 @@ footer .ft-Redes{
 
     #Habilidades .card-services{
       padding: 30px 20px;
+      margin: 20px auto;
     }
 
     #Habilidades .card-services svg{
@@ -949,6 +963,19 @@ footer .ft-Redes{
   .card-description{
     font-size: 3vw;
   }
+
+/*--------------- EXPERIENCIA -------------------*/
+
+
+  #Experiencia{
+    width: 100%;
+  }
+  
+  #Experiencia .vertical-timeline{
+    width: 85%;
+    margin: auto 10px;
+  }
+  
 
 /*---------------------- FOOTER  -------------------------*/
 

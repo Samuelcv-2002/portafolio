@@ -1,3 +1,4 @@
+import './loader.css'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import Incio from './vistas/inicio'
