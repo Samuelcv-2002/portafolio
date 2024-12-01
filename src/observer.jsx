@@ -14,7 +14,7 @@ export default function useObserver() {
             entry.target.classList.toggle("Mostrar", entry.isIntersecting)
         })
 
-    }, { threshold: 0.1 }));
+    }, { threshold: 0.5 }));
 
     useEffect(() => {
         const currentObserver = observer.current;
